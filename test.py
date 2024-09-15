@@ -21,9 +21,7 @@ model = VGGFace(model='resnet50', include_top=False, input_shape=(224, 224, 3), 
 detector = MTCNN()
 
 #load image => face detection
-# sample_image = cv2.imread('sample/Riteish_Deshmukh.46.jpg')
-# sample_image = cv2.imread('sample/Abdul.jpeg')
-sample_image = cv2.imread('sample/me.jpg')
+sample_image = cv2.imread('sample/Riteish_Deshmukh.46.jpg')
 
 results = detector.detect_faces(sample_image)
 
